@@ -16,6 +16,7 @@ app.use('/api',require('./routes').signInRoute)
 app.use('/api',require('./routes').creatContactRoute)
 app.use('/api',require('./routes').showContactRoute)
 app.use('/api',require('./routes').updateContactRoute)
+app.use('/api',require('./routes').removeContactRoute)
 
 mongoose.connect('mongodb://127.0.0.1:27017/contactsTask').then((res)=>{
     console.log("DB conected Ok!")
